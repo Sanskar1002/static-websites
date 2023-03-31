@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.landing-screen {
+    /* height: 100vh; */
+    background-image: url('images/bg-hero-desktop.svg');
+    background-size: cover;
+    background-color: #e7fbfe;
+    background-repeat: no-repeat;
+    padding: 3% 8%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo span {
+    color: #ec4d37;
+}
+
+footer span {
+    color: #ec4d37;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.web-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    transition: 0.5s ease;
+
+}
+
+.menu-btn {
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(233 134 240);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    /* color: #ff52c1; */
+    color: rgb(233 134 240);
+}
+
+.nav-links button {
+    font-family: cursive;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #001e2c;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links button:hover {
+    background-color: white;
+    color: #001e2c;
+
+}
+
+.landing-content {
+    display: flex;
+
+    align-items: center;
+    padding-top: 50px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.landing-content .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.landing-content img {
+    width: 52%;
+}
+
+.landing-content .content h1 {
+    max-width: 400px;
+    font-size: 213%;
+    text-transform: capitalize;
+
+}
+
+.landing-content .content p {
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 420px;
+}
+
+.landing-content .content button {
+    border-radius: 30px;
+    padding: 15px 36px;
+    background-color: #ff52c1;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.landing-content .content button:hover {
+    background-color: #001e2c;
+    color: white;
+
+}
+
+.footer-content {
+    background-color: #002535;
+    display: flex;
+    padding: 7% 8%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 15%;
+}
+
+.footer-content .contact {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content a:hover {
+    color: #ff52c1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 100px;
+}
+
+
+.contact-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.b-logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.link1,
+.link2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social img {
+    width: 30px;
+    border-radius: 20px;
+}
+
+.social img:hover {
+    box-shadow: 0px 0px 20px 5px #ff52c1;
+
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 100px 60px;
+    gap: 70px;
+    padding-bottom: 300px;
+}
+
+/* .box {
+    display: flex;
+    align-items: center;
+    width: 1240px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 30px -15px black;
+    border-radius: 10px;
+    justify-content: space-around;
+} */
+.subcontainer {
+    display: flex;
+    align-items: center;
+    /* width: 1240px; */
+    /* height: 500px; */
+    background-color: white;
+    box-shadow: 0px 0px 30px -15px black;
+    border-radius: 10px;
+    justify-content: center;
+    width: 90%;
+
+
+}
+
+
+.box {
+    display: flex;
+    align-items: center;
+    padding: 5% 5%;
+    justify-content: center;
+    gap: 4%;
+}
+
+.footer-box {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 670px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 30px -15px black;
+    border-radius: 10px;
+    bottom: -80px;
+}
+
+.footer-box button {
+    border-radius: 30px;
+    padding: 20px 90px;
+    background-color: #ff52c1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 10px 5px 30px -8px black;
+}
+
+.footer-box button:hover {
+    background-color: #001e2c;
+    color: white;
+}
+
+.footer-box p {
+    color: #001e2c;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.box img {
+    width: 40%;
+}
+
+.box p {
+    width: 99%;
+    color: #001e2c;
+}
+
+.box h2 {
+    font-size: 30px;
+    color: #001e2c;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 45%;
+}
+
+.b-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-box:hover {
+    box-shadow: -10px -10px 25px -5px #ff4c97, 10px 10px 25px -5px #00beff;
+}
+
+.subcontainer:hover {
+    background: radial-gradient(#ff4c97, #00beff);
+    background-size: 700% 700%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+
+    0% {
+
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+
+        background-position: 0% 50%;
+
+    }
+
+}
+
+@media (max-width : 640px) {
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        gap: 4px;
+    }
+
+    .b-logo h1 {
+        font-size: 18px;
+    }
+
+    .b-logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .landing-content .content button {
+        padding: 15px 30px;
+    }
+
+    .web-name {
+        font-size: 18px;
+    }
+
+    .nav-bar {
+        padding: 20px 10px;
+    }
+
+    .container-content {
+        text-align: center;
+        width: auto;
+        padding-top: 25px;
+    }
+
+    .sub-container1 .container-content {
+        position: absolute;
+        bottom: 30px;
+    }
+
+    .sub-container3 .container-content {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    .sub-container1 img {
+        position: absolute;
+        top: 30px;
+    }
+
+    .sub-container3 img {
+        position: absolute;
+        top: 30px;
+    }
+
+    .landing-content {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        gap: 50px;
+    }
+
+    .landing-content .content p {
+        max-width: 270px;
+        font-weight: 100;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #002535;
+        width: 100%;
+        height: 90vh;
+
+    }
+
+    #click:checked~.nav-links {
+        /* left: 0%; */
+        top: 10%;
+    }
+
+    .nav-links a {
+        color: white;
+        letter-spacing: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-links button {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #002535;
+        border: 1px solid #ff5136;
+        box-shadow: 0px 0px 10px 0px white;
+        background: radial-gradient(#ff8e7e, #ff529e);
+        background-size: 400% 400%;
+        animation: gradient 5s ease-in-out infinite;
+    }
+
+    .box {
+        flex-direction: column;
+        width: 300px;
+        height: 450px;
+    }
+
+    .container {
+
+        padding: 180px 20px;
+        padding-bottom: 240px;
+    }
+
+    .box img {
+        width: 230px;
+    }
+
+    .box h2 {
+        font-size: 22px;
+    }
+
+    .box p {
+        width: 223px;
+    }
+
+    .landing-screen {
+        padding: 10px;
+        /* height: 100vh; */
+    }
+
+    .landing-content img {
+        width: 90%;
+    }
+
+    .footer-box {
+        width: 300px;
+        height: 200px;
+    }
+
+    .footer-box p {
+        padding: 0px 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        padding: 150px 30px 30px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .footer-content .contact {
+        width: 250px;
+        gap: 20px;
+    }
+
+    .footer-content p {
+        width: 200px;
+    }
+
+    .footer-box button {
+        padding: 15px 30px;
+    }
+
+    .landing-content .content {
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .landing-content .content h1 {
+        font-size: 30px;
+        width: 285px;
+    }
+
+    .landing-content .content h1 {
+        width: 290px;
+        font-size: 25px;
+        text-transform: capitalize;
+    }
+
+    .social {
+        margin: auto;
+    }
+
+    .sub-container1,
+    .sub-container3 {
+        position: relative;
+    }
+
+    .subcontainer {
+        background: radial-gradient(#ff4c97, #00beff);
+        background-size: 700% 700%;
+        animation: gradient 5s ease-in-out infinite;
+    }
+}
+
+
+
+@media (max-width : 1024px) and (min-width : 641px) {
+    .nav-links {
+        gap: 18px;
+    }
+
+    .landing-content img {
+        width: 60%;
+    }
+
+    .landing-content .content h1 {
+        font-size: 180%;
+    }
+
+    .footer-box {
+        text-align: center;
+        width: 50%;
+        height: 15%;
+    }
+
+    .footer-box p {
+        font-size: 20px;
+    }
+
+    .footer-box button {
+        padding: 5% 8%;
+        border-radius: 35px;
+    }
+
+    .footer-content {
+        gap: 50px;
+    }
+
+    .link1,
+    .link2 {
+        width: 90px;
+    }
+
+    .footer-links {
+        gap: 50px;
+    }
+
+
+
+}
+
+@media (max-width : 920px) and (min-width : 641px) {
+    .social {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        padding-top: 20%;
+    }
+
+    .landing-content .content {
+        text-align: center;
+    }
+}

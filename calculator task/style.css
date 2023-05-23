@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  background: url("/images/wallpaper3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.calci-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    166.34deg,
+    #1a1a1a 10%,
+    #0f1010d7 22.9%,
+    #000309 100%
+  );
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 40px -5px #ffffffb5;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  gap: 20px;
+  border-radius: 30px 30px 0px 0px;
+  padding-bottom: 5px;
+}
+
+.display input {
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  color: #fbfbfb;
+  font-size: 18px;
+  width: 250px;
+}
+
+.display input:first-of-type {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.display h1 {
+  color: rgba(255, 255, 255, 0.833);
+  font-size: 24px;
+  padding: 20px 0px 20px 0px;
+  letter-spacing: 1px;
+}
+
+.auto-input {
+  font-size: 24px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+  border-radius: 30px;
+  background: url("./images/wallpaper2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-top: 1px solid white;
+}
+
+.left-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-upper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid white;
+  gap: 20px;
+  background: rgba(5, 5, 5, 0.79);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+}
+
+.left-lower-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 50px;
+  gap: 20px;
+  background: rgba(5, 5, 5, 0.79);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.left-lower-buttons input {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(5, 5, 5, 0.79);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  color: white;
+  border: 1px solid white;
+}
+.rows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.left-upper-buttons input {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+}
+
+.right-buttons input {
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border-radius: 50%;
+}
+
+.right-buttons input:last-of-type {
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00ed72b0, #00a3d0bd, #d72e3cb7);
+}
+
+.left-lower-buttons input:hover {
+  background: linear-gradient(45deg, #00ed723e, #00a3d03e, #d72e3c44);
+}
+
+.right-buttons input:hover {
+  background: linear-gradient(45deg, #00ed723e, #00a3d03e, #d72e3c44);
+}
+
+.left-upper-buttons input:hover {
+  background: linear-gradient(45deg, #00ed723e, #00a3d03e, #d72e3c44);
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 8px;
+}

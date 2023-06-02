@@ -1,0 +1,125 @@
+.profile-intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px 120px;
+}
+
+.profile-links {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px; */
+  border-right: 2px solid #717171;
+  padding: 50px 50px 50px 0px;
+  /* height: 100%; */
+}
+
+.profile-links ul {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.profile-links li {
+  padding: 10px 20px;
+  width: 255px;
+}
+.profile-links a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #000000;
+  opacity: 0.5;
+  padding-left: 30px;
+  margin: 20px 0px;
+  /* padding: 20px 20px; */
+  /* transition: all 0.1s ease-in-out; */
+  /* width: 180px; */
+}
+
+.profile-links a:hover {
+  color: #e84393;
+  opacity: 1;
+  margin-left: 25px;
+}
+
+.edit-profile form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 130px;
+  gap: 24px;
+}
+
+.edit-profile form h2 {
+  color: #e84393;
+}
+
+.user-data {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+.prof-password {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+form input {
+  padding: 13px 16px;
+  /* width: 330px; */
+  width: 100%;
+}
+
+.label-input input {
+  width: 330px;
+}
+
+.profile-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.profile-buttons button {
+  padding: 16px 48px;
+  background-color: transparent;
+}
+
+.profile-buttons button:last-of-type {
+  border: 1px solid #e84393;
+  background-color: #e84393;
+  color: #f5f5f5;
+}
+
+.profile-buttons button:last-of-type:hover {
+  background-color: transparent;
+  color: #e84393;
+}
+form input:focus {
+  box-shadow: 0px 0px 10px 0px #e84393;
+  border: none;
+}
+
+.profile-buttons button:first-of-type:hover {
+  background-color: #e84393;
+  color: #f5f5f5;
+  border: 2px solid #e84393;
+}

@@ -1,0 +1,58 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 120px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  gap: 8px;
+}
+
+.about-content img {
+  width: 100px;
+}
+
+.company-name h1 {
+  font-size: 80px;
+  /* position: relative; */
+  color: #e84393;
+}
+.company-name h1 img {
+  position: absolute;
+  /* width: 100px; */
+  /* top: 100px; */
+  /* top: 60px;
+  left: 147px; */
+  width: 165px;
+  top: 370px;
+  left: 273px;
+  animation-name: bird;
+  animation-duration: 5s;
+}
+
+@keyframes bird {
+  0% {
+    width: 100px;
+    top: 60px;
+    left: 147px;
+  }
+  100% {
+    width: 165px;
+    top: 370px;
+    left: 273px;
+  }
+}
+
+.about-content h3 {
+  color: #e84393;
+}
+
+.about-content h1 {
+  font-size: 24px;
+}

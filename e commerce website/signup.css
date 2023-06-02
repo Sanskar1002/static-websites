@@ -1,0 +1,134 @@
+.sign-up {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 120px;
+
+  background: linear-gradient(204.28deg, #e6cece 14.76%, #d1ccf4 97.11%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.sign-up img:first-of-type {
+  width: 650px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  /* animation-name: moving;
+  animation-duration: 10s; */
+}
+
+.sign-up img:last-of-type {
+  width: 500px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  animation-name: moving;
+  animation-duration: 10s;
+}
+
+@keyframes moving {
+  0% {
+    width: 100px;
+    /* left: 0px; */
+    bottom: 800px;
+  }
+  25% {
+    /* left: 0px; */
+    bottom: 300px;
+  }
+  50% {
+    /* left: 200px; */
+    bottom: 100px;
+  }
+  75% {
+    /* left: 300px; */
+    bottom: 300px;
+  }
+  100% {
+    /* left: 400px; */
+    bottom: 0px;
+  }
+}
+.signup-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  padding: 20px 40px;
+  /* border: 1px solid #e84393; */
+  /* background-color: #4375e896; */
+}
+
+.sign-up-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.signup-form h2 {
+  font-size: 36px;
+}
+
+.signup-form .heading p {
+  font-size: 16px;
+  text-align: center;
+}
+.sign-up-detail input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  background-color: transparent;
+}
+
+.signup-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.signup-buttons button {
+  padding: 16px 0px;
+  width: 100%;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.signup-buttons button:first-of-type {
+  background-color: #e84393;
+  color: #f5f5f5;
+  /* border: none; */
+  border: 1px solid #e84393;
+}
+
+.signup-buttons button:last-of-type {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+.login-to {
+  margin: auto;
+}
+
+.login-to a {
+  color: #e84393;
+}
+
+.signup-buttons button:first-of-type:hover {
+  color: #e84393;
+  background-color: transparent;
+  border: 1px solid #e84393;
+}
+
+.signup-buttons button:last-of-type:hover {
+  color: #e84393;
+  border-color: #e84393;
+}

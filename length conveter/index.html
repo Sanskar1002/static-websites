@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="project-common-css.css" />
+    <title>Length Converter</title>
+  </head>
+  <body>
+    <div class="tool-container">
+      <!-- <h1>Length Converter</h1> -->
+
+      <div id="lengthInput" class="tool-container-feild-group">
+        <div class="tool-container-feild">
+          <h1><span class="auto-input"></span></h1>
+          <div class="tool-input-group">
+            <div class="tool-input-label">
+              <label for="fromUnit">From:</label>
+            </div>
+            <select class="tool-select-group" id="fromUnit">
+              <option selected value="Millimeter">Millimeter</option>
+              <option value="Centimeter">Centimeter</option>
+              <option value="Decimeter">Decimeter</option>
+              <option value="Meter">Meter</option>
+              <option value="Kilometer">Kilometer</option>
+              <option value="Foot">Foot</option>
+              <option value="Inch">Inch</option>
+              <option value="Mile">Mile</option>
+              <option value="Yard">Yard</option>
+            </select>
+            <input
+              placeholder="Enter Length"
+              id="fromLength"
+              type="number"
+              name="from-length"
+              min="0"
+              class="tool-input-feild"
+            />
+          </div>
+
+          <div class="tool-input-group">
+            <div class="tool-input-label">
+              <label for="toUnit">To:</label>
+            </div>
+            <select class="tool-select-group" id="toUnit">
+              <option value="Millimeter">Millimeter</option>
+              <option selected value="Centimeter">Centimeter</option>
+              <option value="Decimeter">Decimeter</option>
+              <option value="Meter">Meter</option>
+              <option value="Kilometer">Kilometer</option>
+              <option value="Foot">Foot</option>
+              <option value="Inch">Inch</option>
+              <option value="Mile">Mile</option>
+              <option value="Yard">Yard</option>
+            </select>
+            <input
+              readonly
+              placeholder="Output"
+              id="outputLength"
+              type="number"
+              name="to-temperature"
+              min="0"
+              class="tool-input-feild readonly-background"
+            />
+          </div>
+
+          <div class="tool-input-group">
+            <button
+              onclick="RestLengthConverter()"
+              class="tool-btn tool-btn-reset"
+            >
+              Reset
+            </button>
+            <button
+              onclick="CalculateLength()"
+              class="tool-btn tool-btn-calculate"
+            >
+              Calculate
+            </button>
+          </div>
+          <h2>Made by Sanskar ❤️</h2>
+        </div>
+
+        <div id="OutputResult" class="tool-output-results tool-output-box">
+            <h2>Result</h2>
+            <p id="lengthResult"></p>
+            <p><b>Formula:</b> <span id="lengthFormula"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lengthFormula.js"></script>
+    <script src="project-common-js.js"></script>
+    <script src="length-converter-js.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["Length Converter"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

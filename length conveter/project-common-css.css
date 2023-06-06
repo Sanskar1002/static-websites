@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+body {
+  background-color: #e2e2e2;
+  height: 100vh;
+}
+.tool-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("images/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tool-container h1,
+h2 {
+  color: white;
+}
+
+.tool-container h2 {
+  font-size: 12px;
+  padding: 10px;
+}
+.tool-container h1 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 20px 10px 10px 10px;
+}
+.tool-container-feild-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.tool-container-feild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  background-image: linear-gradient(0deg, #00000078, #ff369e78, #62ccf7c7);
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.617);
+}
+.tool-input-group {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px 20px;
+  width: 100%;
+}
+.tool-input-group:last-child {
+  border: none;
+}
+
+.tool-input-feild {
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 135px;
+}
+.tool-btn {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.tool-btn-reset {
+  background-color: #05f7ffb6;
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  font-size: 16px;
+}
+.tool-select-group {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+}
+.tool-btn-calculate {
+  font-size: 16px;
+  color: white;
+  border: 2px solid white;
+  background: linear-gradient(to left, #ffffffd3, #ff369ead, #62cdf7dc);
+}
+.tool-output-box {
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tool-output-box ul {
+  margin: 5px;
+  margin-left: 25px;
+}
+.tool-output-box ul li {
+  padding: 2px;
+  font-size: 12px;
+}
+
+.tool-input-label {
+  width: 78px;
+  border: 1px solid black;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #000000c4;
+  text-align: center;
+}
+label {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+select {
+  background-color: #000000c4;
+  color: rgb(255, 255, 255);
+}
+option {
+  background: rgba(0, 0, 0, 0.712);
+}
+input {
+  background-color: #000000c4;
+  color: white;
+  font-size: 12px;
+}
+
+input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .tool-container h1 {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 24px;
+  }
+  .tool-container h2 {
+    font-size: 8px;
+  }
+  .tool-input-group {
+    padding: 10px 10px;
+  }
+
+  .tool-select-group {
+    font-size: 10px;
+    width: 110px;
+  }
+
+  .tool-input-label {
+    font-size: 12px;
+    width: 60px;
+  }
+  .tool-input-feild {
+    font-size: 10px;
+    width: 100px;
+  }
+
+  .tool-btn {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .tool-container-feild {
+    margin-top: 115px;
+  }
+}

@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-section {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+.logo h1 {
+  text-align: center;
+  position: relative;
+  font-size: 3em;
+  letter-spacing: 15px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: 0.7em;
+  animation: animate1 5s linear infinite;
+  outline: none;
+  /* width: 50px; */
+}
+
+@keyframes animate1 {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60.1%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+.weather-card {
+  /* height: 500px; */
+  background: linear-gradient(to bottom right, #d8e8fe78, #2a2a2a77);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 25px;
+  gap: 30px;
+  border-radius: 25px;
+  color: #fff;
+  max-width: 500px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.search input {
+  outline: none;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+.search button {
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  padding: 5px;
+}
+.search button img {
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.invalid {
+  text-align: center;
+  display: none;
+}
+
+.invalid h2 {
+  font-size: 20px;
+}
+
+.invalid video {
+  margin-top: 20px;
+  width: 100%;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.row img {
+  width: 120px;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp h2 {
+  font-size: 90px;
+  color: #ffffff;
+}
+
+.data p {
+  font-size: 18px;
+}
+
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.city {
+  font-size: 40px;
+}
+
+.fetched-detail {
+  display: none;
+}
+
+.designedby {
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .temp h2 {
+    font-size: 50px;
+  }
+}
